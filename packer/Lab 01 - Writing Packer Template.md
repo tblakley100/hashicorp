@@ -75,11 +75,7 @@ Builders are responsible for creating machines and generating images from them f
 Add a builder block to `aws-ubuntu.pkr.hcl` referencing the source specified above.  The source can be referenced usin the HCL interpolation syntax.
 
 ```hcl
-build {
-  sources = [
-    "source.amazon-ebs.ubuntu"
-  ]
-}
+
 ```
 
 ### Task 4: Build a new Image using Packer
