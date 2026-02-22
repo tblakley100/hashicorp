@@ -1,0 +1,43 @@
+source "amazon-ebs" "ubuntu" {
+  ami_name      = "packer-ubuntu-aws-{{timestamp}}"
+  instance_type = "t3.micro"
+  region        = "us-east-2"
+  ami_regions   = ["us-west-2", "us-east-2"]
+  source_ami_filter {
+    filters = {
+      name                = "ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"
+      root-device-type    = "ebs"
+      virtualization-type = "hvm"
+    }
+    most_recent = true
+    owners      = ["099720109477"]
+  }
+  ssh_username = "ubuntu"
+  tags = {
+    "Name"        = "MyUbuntuImage"
+    "Environment" = "Production"
+    "OS_Version"  = "Ubuntu 22.04"
+    "Release"     = "Latest"
+    "Created-by"  = "Packer"
+  }
+}
+
+build {
+  sources = [
+    "source.amazon-ebs.ubuntu"
+  ]
+
+  provisioner "shell" {
+    inline = [
+      "echo Installing Updates",
+      "sudo apt-get update",
+      "echo Upgrading Packages",
+      "sudo apt-get upgrade -y",
+      "echo Installing Nginx",
+      "sudo apt-get install -y nginx"
+    ]
+  }
+
+  post-processor "manifest" {}
+
+}
