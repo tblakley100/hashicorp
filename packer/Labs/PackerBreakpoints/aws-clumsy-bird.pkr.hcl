@@ -20,6 +20,8 @@ source "amazon-ebs" "ubuntu" {
     most_recent = true
     owners      = ["099720109477"]
   }
+  ssh_keypair_name      = "my-packer-key-tcb"
+  ssh_private_key_file  = "my-packer-key-tcb.pem"
   ssh_username = "ubuntu"
   tags = {
     "Name"        = "Clumsy Bird"
@@ -38,9 +40,9 @@ build {
   provisioner "shell" {
     inline = [
       "echo Installing Updates",
-      "sudo apt-get update",
+      "sudo apt-get update || true",
       "echo Upgrading Packages",
-      "sudo apt-get upgrade -y"
+      "sudo apt-get upgrade -y || true"
     ]
   }
 

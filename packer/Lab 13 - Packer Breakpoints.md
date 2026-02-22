@@ -194,7 +194,7 @@ Example:
 ssh -i ec2_ubuntu.pem ubuntu@54.149.137.240
 ```
 
-Once connect to the image, run a series of checks on the `nginx` service and the files in the `/tmp` directory.
+Once connected to the image, run a series of checks on the `nginx` service and the files in the `/tmp` directory.
 
 ```bash
 sudo systemctl status nginx
