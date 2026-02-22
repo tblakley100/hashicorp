@@ -1,0 +1,140 @@
+2026/02/22 14:37:32 [INFO] Packer version: 1.15.0 [go1.24.12 darwin arm64]
+2026/02/22 14:37:32 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/02/22 14:37:32 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/tcb/.packerconfig
+2026/02/22 14:37:32 [WARN] Config file doesn't exist: /Users/tcb/.packerconfig
+2026/02/22 14:37:32 [INFO] Setting cache directory: /Users/tcb/.cache/packer
+2026/02/22 14:37:32 [TRACE] listing potential installations for "github.com/hashicorp/amazon" that match "~> 1". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/tcb/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0x14000285100)}}, ReleasesOnly:false}}
+2026/02/22 14:37:32 [TRACE] Found the following "github.com/hashicorp/amazon" installations: [{/Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 v1.8.0 x5.0}]
+2026/02/22 14:37:32 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2026/02/22 14:37:32 [INFO] found external [import] post-processors from amazon plugin
+2026/02/22 14:37:32 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2026/02/22 14:37:32 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"/Users/tcb/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"arm64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0x14000284180)}}, ReleasesOnly:false}}
+2026/02/22 14:37:32 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2026/02/22 14:37:32 [INFO] found external [import] post-processors from amazon plugin
+2026/02/22 14:37:32 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2026/02/22 14:37:32 [INFO] found external [arm chroot dtl] builders from azure plugin
+2026/02/22 14:37:32 found external [dtlartifact] provisioner from azure plugin
+2026/02/22 14:37:32 found external [keyvaultsecret] datasource from azure plugin
+2026/02/22 14:37:32 [TRACE] Using protobuf for communication with plugins
+2026/02/22 14:37:32 [INFO] Starting external plugin /Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 start builder --protobuf ebs
+2026/02/22 14:37:32 Starting plugin: /Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 []string{"/Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64", "start", "builder", "--protobuf", "ebs"}
+2026/02/22 14:37:32 Waiting for RPC address for: /Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64
+2026/02/22 14:37:32 Received unix RPC address for /Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64: addr is /var/folders/cv/ct2p61hx64n6dk56wrw4btpr0000gn/T/packer-plugin980642731
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 Plugin address: unix /var/folders/cv/ct2p61hx64n6dk56wrw4btpr0000gn/T/packer-plugin980642731
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 Waiting for connection...
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 Serving a plugin connection...
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 [TRACE] starting builder ebs
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/02/22 14:37:32 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2026/02/22 14:37:32 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:32 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/02/22 14:37:32 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/02/22 14:37:32 ui: [1;32mamazon-ebs.ubuntu: output will be in this color.[0m
+2026/02/22 14:37:32 ui: 
+2026/02/22 14:37:32 Build debug mode: false
+2026/02/22 14:37:32 Force build: false
+2026/02/22 14:37:32 On error: 
+2026/02/22 14:37:32 Waiting on builds to complete...
+2026/02/22 14:37:32 Starting build run: amazon-ebs.ubuntu
+2026/02/22 14:37:32 Running builder: amazon-ebs
+2026/02/22 14:37:32 [INFO] (telemetry) Starting builder amazon-ebs.ubuntu
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:33 Found region us-east-2
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:33 [INFO] AWS Auth provider used: "SharedConfigCredentials: /Users/tcb/.aws/credentials"
+2026/02/22 14:37:33 ui: [1;32m==> amazon-ebs.ubuntu: Prevalidating any provided VPC information[0m
+2026/02/22 14:37:33 ui: [1;32m==> amazon-ebs.ubuntu: Prevalidating AMI Name: packer-ubuntu-aws-1771792652[0m
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:33 Using AMI Filters {
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "DryRun": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "ExecutableUsers": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "Filters": [
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     {
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Name": "name",
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Values": [
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:         "ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       ]
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     },
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     {
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Name": "root-device-type",
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Values": [
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:         "ebs"
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       ]
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     },
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     {
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Name": "virtualization-type",
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       "Values": [
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:         "hvm"
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:       ]
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     }
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   ],
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "ImageIds": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "IncludeDeprecated": false,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "IncludeDisabled": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "MaxResults": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "NextToken": null,
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   "Owners": [
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:     "099720109477"
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin:   ]
+2026/02/22 14:37:33 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: }
+2026/02/22 14:37:34 ui: [1;32m==> amazon-ebs.ubuntu: Found Image ID: ami-04a131f50a7b86648[0m
+2026/02/22 14:37:34 ui: [1;32m==> amazon-ebs.ubuntu: Creating temporary keypair: packer_699b690c-b514-39f6-2595-49fde2a7440b[0m
+2026/02/22 14:37:34 ui: [1;32m==> amazon-ebs.ubuntu: Creating temporary security group for this instance: packer_699b690e-4a23-e8e8-9711-ff75db9e7b7d[0m
+2026/02/22 14:37:34 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:34 [DEBUG] Waiting for temporary security group: sg-008a7e904e84f076b
+2026/02/22 14:37:34 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:34 [DEBUG] Found security group sg-008a7e904e84f076b
+2026/02/22 14:37:34 ui: [1;32m==> amazon-ebs.ubuntu: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...[0m
+2026/02/22 14:37:35 ui: [1;32m==> amazon-ebs.ubuntu: Launching a source AWS instance...[0m
+2026/02/22 14:37:36 ui: [1;32m==> amazon-ebs.ubuntu: Instance ID: i-0ec7fce7b280cfc8f[0m
+2026/02/22 14:37:36 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for instance (i-0ec7fce7b280cfc8f) to become ready...[0m
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 [INFO] Not using winrm communicator, skipping get password...
+2026/02/22 14:37:51 ui: [1;32m==> amazon-ebs.ubuntu: Using SSH communicator to connect: 52.14.87.244[0m
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 [INFO] Waiting for SSH, up to timeout: 5m0s
+2026/02/22 14:37:51 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for SSH to become available...[0m
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 Using host value: 52.14.87.244
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 [INFO] Attempting SSH connection to 52.14.87.244:22...
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 [DEBUG] reconnecting to TCP connection for SSH
+2026/02/22 14:37:51 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:51 [DEBUG] handshaking with SSH
+2026/02/22 14:37:52 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:52 [DEBUG] handshake complete!
+2026/02/22 14:37:52 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:52 [DEBUG] Opening new ssh session
+2026/02/22 14:37:54 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:54 [INFO] agent forwarding enabled
+2026/02/22 14:37:54 ui: [1;32m==> amazon-ebs.ubuntu: Connected to SSH![0m
+2026/02/22 14:37:54 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:37:54 Running the provision hook
+2026/02/22 14:37:54 ui: [1;32m==> amazon-ebs.ubuntu: Stopping the source instance...[0m
+2026/02/22 14:37:54 ui: [1;32m==> amazon-ebs.ubuntu: Stopping instance[0m
+2026/02/22 14:37:54 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for the instance to stop...[0m
+2026/02/22 14:38:38 ui: [1;32m==> amazon-ebs.ubuntu: Creating AMI packer-ubuntu-aws-1771792652 from instance i-0ec7fce7b280cfc8f[0m
+2026/02/22 14:38:38 ui: [1;32m==> amazon-ebs.ubuntu: Attaching run tags to AMI...[0m
+2026/02/22 14:38:38 ui: [1;32m==> amazon-ebs.ubuntu: AMI: ami-00bed79d61424e154[0m
+2026/02/22 14:38:38 ui: [1;32m==> amazon-ebs.ubuntu: Waiting for AMI to become ready...[0m
+2026/02/22 14:38:38 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:38:38 Waiting for AMI (ami-00bed79d61424e154) to be available...
+2026/02/22 14:40:37 packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64 plugin: 2026/02/22 14:40:37 fast-boot disabled, no launch-template to set
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Skipping Enable AMI deprecation...[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Skipping Enable AMI deregistration protection...[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tags to AMI (ami-00bed79d61424e154)...[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Tagging snapshot: snap-0af354f2c4500a545[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Creating AMI tags[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tag: "OS_Version": "Ubuntu 22.04"[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tag: "Release": "Latest"[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tag: "Created-by": "Packer"[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tag: "Environment": "Production"[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Adding tag: "Name": "Clumsy Bird"[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Creating snapshot tags[0m
+2026/02/22 14:40:37 ui: [1;32m==> amazon-ebs.ubuntu: Terminating the source AWS instance...[0m
+2026/02/22 14:40:53 ui: [1;32m==> amazon-ebs.ubuntu: Cleaning up any extra volumes...[0m
+2026/02/22 14:40:53 ui: [1;32m==> amazon-ebs.ubuntu: No volumes to clean up, skipping[0m
+2026/02/22 14:40:53 ui: [1;32m==> amazon-ebs.ubuntu: Deleting temporary security group...[0m
+2026/02/22 14:40:53 ui: [1;32m==> amazon-ebs.ubuntu: Deleting temporary keypair...[0m
+2026/02/22 14:40:54 [INFO] (telemetry) ending amazon-ebs.ubuntu
+2026/02/22 14:40:54 ui: [1;32mBuild 'amazon-ebs.ubuntu' finished after 3 minutes 21 seconds.[0m
+2026/02/22 14:40:54 ui: 
+==> Wait completed after 3 minutes 21 seconds
+2026/02/22 14:40:54 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact-count []string{"1"}
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "builder-id", "mitchellh.amazonebs"}
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "id", "us-east-2:ami-00bed79d61424e154"}
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "string", "AMIs were created:\nus-east-2: ami-00bed79d61424e154\n"}
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "files-count", "0"}
+2026/02/22 14:40:54 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "end"}
+2026/02/22 14:40:54 ui: --> amazon-ebs.ubuntu: AMIs were created:
+us-east-2: ami-00bed79d61424e154
+2026/02/22 14:40:54 [INFO] (telemetry) Finalizing.
+2026/02/22 14:40:54 waiting for all plugin processes to complete...
+2026/02/22 14:40:54 /Users/tcb/.config/packer/plugins/github.com/hashicorp/amazon/packer-plugin-amazon_v1.8.0_x5.0_darwin_arm64: plugin process exited

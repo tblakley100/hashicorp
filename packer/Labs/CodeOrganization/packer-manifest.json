@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "name": "ubuntu_22",
+      "builder_type": "amazon-ebs",
+      "build_time": 1771790862,
+      "files": null,
+      "artifact_id": "us-east-2:ami-0eae29cf31cfb5e64",
+      "packer_run_uuid": "4917490d-7f90-791a-8313-fbb946b4d43b",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "4917490d-7f90-791a-8313-fbb946b4d43b"
+}

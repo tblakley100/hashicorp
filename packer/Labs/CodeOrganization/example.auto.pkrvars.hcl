@@ -1,0 +1,5 @@
+ami_prefix            = "my-ubuntu-var"
+azure_subscription_id = "<your Azure subscription key>"
+azure_tenant_id       = "<your Azure tenant key>"
+azure_client_id       = "<your Azure client id>"
+azure_client_secret   = "<your Azure client secret>"
