@@ -1,0 +1,23 @@
+{
+  "builds": [
+    {
+      "name": "windows-2022",
+      "builder_type": "amazon-ebs",
+      "build_time": 1771560649,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0e4616e700885af8d",
+      "packer_run_uuid": "76b73c59-e051-267b-a293-812172422f9e",
+      "custom_data": null
+    },
+    {
+      "name": "windows-2019",
+      "builder_type": "amazon-ebs",
+      "build_time": 1771561216,
+      "files": null,
+      "artifact_id": "us-east-2:ami-0201cf7e0ed82a3ae",
+      "packer_run_uuid": "76b73c59-e051-267b-a293-812172422f9e",
+      "custom_data": null
+    }
+  ],
+  "last_run_uuid": "76b73c59-e051-267b-a293-812172422f9e"
+}
